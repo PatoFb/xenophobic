@@ -17,3 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/extract', '\App\Http\Controllers\FeaturesController@extract')->name('extract');
+Route::get('/extract/emotion', '\App\Http\Controllers\EmotionsController@extract_emotion')->name('extract.emotion');

@@ -19,8 +19,8 @@ class FeaturesController extends Controller
 {
     public function extract() {
         require('C:/xampp/htdocs/xenophobic/vendor/paralleldots/apis/autoload.php');
-        $key1 = "Your first ParallelDots key";
-        $key2 = "Your second ParallelDots key";
+        $key1 = "6KxccbNLUwbPiAWE3pVOlTfFeEQWqHGobleBZQXr2fo";
+        $key2 = "J2dPe9qEdFqd6Jm5K0SMBL2HigVSj8yhJFZesztSuTs";
         set_api_key($key1);
         get_api_key();
         $server = 'https://api.meaningcloud.com/';
@@ -61,7 +61,7 @@ class FeaturesController extends Controller
                 set_api_key($key2);
                 get_api_key();
             }
-            sleep(4);
+            sleep(3);
         }
         return redirect('/');
     }

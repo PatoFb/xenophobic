@@ -26,9 +26,16 @@
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+            <div class="col-md-6">
             <form action="{{route('extract')}}" method="GET" role="form" class="form-horizontal">
-                <button type="submit" class="btn btn-danger">Extract</button>
+                <button type="submit" class="btn btn-danger float-right">Extract</button>
             </form>
+            </div>
+            <div class="col-md-6">
+            <form action="{{route('extract.emotion')}}" method="GET" role="form" class="form-horizontal">
+                <button type="submit" class="btn btn-danger">Extract emotion</button>
+            </form>
+            </div>
         </div>
     </body>
 </html>
